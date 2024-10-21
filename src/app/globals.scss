@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+button {
+
+	@apply border border-foreground p-2;
+}
+
+input,
+textarea {
+
+	@apply border border-foreground;
+}
+
+.btn {
+
+	@apply border-0 bg-indigo-500/90 text-white rounded-md px-3 py-2 inline-flex items-center min-w-36 justify-center transition-all duration-500 hover:bg-indigo-600/90 shadow-md shadow-indigo-300 disabled:bg-indigo-400/60 disabled:pointer-events-none;
+
+	&--icon {
+
+		@apply gap-x-2.5;
+
+		svg {
+
+			@apply transition-transform duration-500;
+		}
+
+
+		&:hover svg{
+
+			@apply -translate-x-0.5 scale-90;
+		}
+	}
+}
+
+table {
+
+	td {
+
+		@apply px-2;
+	}
+
+	thead td {
+
+		@apply py-3;
+	}
+
+	tbody td {
+
+		@apply py-2.5;
+	}
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+textarea {
+
+	@apply border-gray-300 px-2.5 py-1.5 w-full;
+}
+
+.form-input-error {
+
+	@apply mt-1.5 text-red-700 text-sm;
+}
