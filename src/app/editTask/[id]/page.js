@@ -2,10 +2,10 @@
 
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { getTaskDetails, updateTask } from '@/app/lib/tasks'
-import ViewTask from '@/app/components/ViewTask'
-import Message from '@/app/components/Message'
-import TaskForm from '@/app/components/TaskForm'
+import { getTaskDetails, updateTask } from '@/lib/tasks'
+import ViewTask from '@/components/ViewTask'
+import Message from '@/components/Message'
+import TaskForm from '@/components/TaskForm'
 
 export default function EditTask({params}) {
 	const { id } = params

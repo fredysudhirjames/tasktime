@@ -2,7 +2,7 @@
 
 import { Trash2 } from 'lucide-react'
 import { useRouter } from 'next/navigation'
-import { removeTask } from '../lib/tasks'
+import { removeTask } from '@/lib/tasks'
 
 export default function RemoveTask( { id } ) {
 	const router = useRouter();

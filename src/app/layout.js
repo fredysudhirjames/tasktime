@@ -1,7 +1,7 @@
-import localFont from "next/font/local";
-import Header from './components/Header';
+// import localFont from "next/font/local";
+import Header from '@/components/Header';
 import "./globals.scss";
-import HeaderNav from './components/HeaderNav';
+import HeaderNav from '@/components/HeaderNav';
 import { Inter, Roboto_Mono } from "next/font/google";
 
 const inter = Inter({

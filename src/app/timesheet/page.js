@@ -1,5 +1,5 @@
-import { getAllTasks } from '@/app/lib/tasks';
-import TasksTable from '@/app/components/TasksTable';
+import { getAllTasks } from '@/lib/tasks';
+import TasksTable from '@/components/TasksTable';
 
 export default async function ViewTimesheet() {
 	const { tasks } = await getAllTasks();

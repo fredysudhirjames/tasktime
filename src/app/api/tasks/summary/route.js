@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
-import connectDB from '@/app/backend/mongodb';
-import Tasks from '@/app/backend/model/tasks';
+import connectDB from '@/backend/mongodb';
+import Tasks from '@/backend/model/tasks';
 
 export async function GET() {
 	await connectDB();

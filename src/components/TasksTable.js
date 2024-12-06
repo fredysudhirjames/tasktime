@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Pencil } from 'lucide-react';
-import RemoveTask from '@/app/components/RemoveTask';
+import RemoveTask from '@/components/RemoveTask';
 
 export default function TasksTable( { tasks } ) {
 	return(

@@ -51,6 +51,22 @@ textarea {
 	}
 }
 
+.link-with-arrow {
+
+	@apply flex space-x-2 text-indigo-500/90 hover:text-indigo-600/90;
+
+	svg {
+
+		@apply transition-transform duration-500;
+	}
+
+
+	&:hover svg{
+
+		@apply translate-x-1;
+	}
+}
+
 table {
 
 	td {

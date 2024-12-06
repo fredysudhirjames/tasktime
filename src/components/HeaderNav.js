@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { LayoutDashboard, Sheet, WalletCards } from 'lucide-react'
-import { metadata } from '../layout'
+import { metadata } from '@/app/layout'
 
 export default function HeaderNav() {
 	return(

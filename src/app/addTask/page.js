@@ -3,9 +3,9 @@
 import { useState } from 'react';
 import { format } from 'date-fns';
 import { useRouter } from 'next/navigation'
-import TaskForm from '../components/TaskForm';
-import { addNewTask } from '../lib/tasks';
-import Message from '../components/Message';
+import TaskForm from '@/components/TaskForm';
+import { addNewTask } from '@/lib/tasks';
+import Message from '@/components/Message';
 
 export default function AddTask() {
 	const router = useRouter();

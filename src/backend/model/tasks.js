@@ -2,6 +2,8 @@
  * Task database schema.
  */
 
+import { updateSummary } from '@/utils/updateSummary';
+
 const mongoose = require( 'mongoose' );
 const Schema = mongoose.Schema;
 
@@ -31,6 +33,15 @@ const taskSchema = new Schema( {
 }, {
 	timestamps: true
 } );
+
+// Middleware to update summary.
+taskSchema.post( 'save', async function() {
+	try {
+		await updateSummary( this.hours, this.invoiced );
+	} catch ( error ) {
+		console.error( 'Error updating summary:', error );
+	}
+});
 
 const Tasks = mongoose.models.Task || mongoose.model( 'Task', taskSchema );
 
