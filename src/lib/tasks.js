@@ -89,3 +89,16 @@ export const removeTask = async( id ) => {
 		return { error: 'Error deleting task' };
 	}
 }
+
+export const getUninvoicedTasks = async() => {
+	try {
+		const res = await fetch( `${ process.env.NEXT_PUBLIC_API_URL }/api/tasks/pendingTasks`, { cache: 'no-store' } );
+		if ( !res.ok ) {
+			throw new Error( 'Failed to fetch Tasks summary' );
+		}
+		return await res.json();
+	} catch ( error ) {
+		console.error( 'Error fetching task:', error );
+		return [];
+	}
+}

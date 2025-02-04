@@ -19,7 +19,7 @@ export default function HeaderNav() {
 						</Link>
 					</li>
 					<li className='text-sm'>
-						<Link href='' className='flex items-center gap-x-2.5 px-2 py-2 rounded-md hover:bg-indigo-500/60 hover:text-white transition-all duration-500 hover:shadow-lg pointer-events-none opacity-40'>
+						<Link href='/invoices' className='flex items-center gap-x-2.5 px-2 py-2 rounded-md hover:bg-indigo-500/60 hover:text-white transition-all duration-500 hover:shadow-lg'>
 							<WalletCards className='text-base' />Invoices
 						</Link>
 					</li>
