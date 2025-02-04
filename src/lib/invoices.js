@@ -22,7 +22,6 @@ export const createNewInvoice = async ( details ) => {
 		} );
 		// Get the response json
 		const resJson = await res.json()
-		console.log(resJson);
 
 		// Throw error if the request failed.
 		if ( !res.ok ) {

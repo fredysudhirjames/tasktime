@@ -97,3 +97,13 @@ textarea {
 
 	@apply mt-1.5 text-red-700 text-sm;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+	@apply font-title font-medium;
+}

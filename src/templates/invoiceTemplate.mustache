@@ -1,0 +1,31 @@
+<!-- templates/invoiceTemplate.mustache -->
+<html>
+<head>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        h1 { color: #333; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f4f4f4; }
+    </style>
+</head>
+<body>
+    <h1>Invoice #{{invoiceNo}}</h1>
+    <p><strong>Date:</strong> {{date}}</p>
+    <table>
+        <tr>
+            <th>Description</th>
+            <th>Hours</th>
+            <th>Rate</th>
+            <th>Amount</th>
+        </tr>
+        <tr>
+            <td>Services Rendered</td>
+            <td>{{totalHours}}</td>
+            <td>${{rate}}</td>
+            <td>${{amount}}</td>
+        </tr>
+    </table>
+    <p><strong>Total Amount:</strong> ${{amount}}</p>
+</body>
+</html>

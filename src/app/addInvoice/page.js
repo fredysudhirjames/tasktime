@@ -33,7 +33,7 @@ export default function AddInvoice() {
 		return(
 			<div className='space-y-2'>
 				<p className='text-xl font-medium'>Nothing to Invoice!</p>
-				<p>Add a <Link href='addTask' className=' text-teal-700 underline underline-offset-2'>new task</Link> first to generate an Invoice</p>
+				<p>Add a <Link href='addTask' className=' text-teal-700 underline underline-offset-2'>new task</Link> first.</p>
 			</div>
 		)
 	}
@@ -48,6 +48,7 @@ export default function AddInvoice() {
 		}))
 	};
 
+	// Handle form submission.
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		const newInvoice = await createNewInvoice( formData );
